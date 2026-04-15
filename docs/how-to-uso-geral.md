@@ -1,65 +1,128 @@
-# Como Usar o Framework de Otimização de LinkedIn
+# 🚀 Como Usar o Framework (Passo a Passo Prático)
 
-Este guia descreve o processo **completo e cronológico**.
-
----
-
-## ETAPA 1 — Preparação
-
-- Leia e preencha corretamente o `PROFESSIONAL_CONTEXT`
-- Configure o perfil LinkedIn para visibilidade
-- Separe o conteúdo real do seu LinkedIn
+Se você quer aplicar o processo sem dúvida, siga exatamente este guia.
 
 ---
 
-## ETAPA 2 — PROMPT 1 (ANÁLISE)
+## ⏱️ Tempo total: 60–90 minutos
+
+---
+
+## ✅ ETAPA 1 — Preparação
+
+### 1. Definir seu posicionamento
+
+📄 Abra e preencha:
+https://github.com/wesleysampa/linkedin-profile-optimization/blob/main/docs/professional-context.md
+
+> ⚠️ Não pule isso — é o passo mais importante
+
+---
+
+### 2. Ajustar seu perfil
+
+📄 Configure aqui:
+./configuracoes-perfil-publico.md
+
+---
+
+### 3. Coletar seus dados
+
+* Copie seu LinkedIn para um bloco de notas
+* Inclua: headline, sobre, experiências, skills
+
+---
+
+## 🔍 ETAPA 2 — Análise (PROMPT 1)
 
 Arquivo:
 `prompts/prompt_analysis_Profile.xml`
 
-1. Preencha `<PROFESSIONAL_CONTEXT>`
-2. Preencha `<INPUT_DATA>` com dados reais
-3. Copie todo o XML
-4. Execute na IA
+### Faça isso:
 
-Resultado:
-- Relatório
-- `ANALYSIS_HANDOFF.txt`
+1. Preencha `<PROFESSIONAL_CONTEXT>`
+2. Preencha `<INPUT_DATA>`
+3. Copie todo o conteúdo
+4. Cole na IA e execute
+
+### Você vai receber:
+
+* Diagnóstico completo
+* Gaps do perfil
+* Arquivo `ANALYSIS_HANDOFF.txt`
 
 ---
 
-## ETAPA 3 — PROMPT 2 (OTIMIZAÇÃO)
+## 🚀 ETAPA 3 — Otimização (PROMPT 2)
 
 Arquivo:
 `prompts/prompt_optimization_Profile.xml`
 
-1. Mantenha o mesmo `PROFESSIONAL_CONTEXT`
-2. Cole o HANDOFF completo no CDATA
-3. Execute na IA
+### Faça isso:
 
-Resultados:
-- Headline
-- About
-- Skills
-- Boolean
-- Ajustes por seção
-- Plano 30–90 dias
+1. Mantenha o mesmo contexto
+2. Cole o HANDOFF completo
+3. Execute
+
+### Você vai receber:
+
+* Headline nova
+* About reescrito
+* Skills organizadas
+* Melhorias completas
 
 ---
 
-## ETAPA 4 — Aplicação no LinkedIn
+## 🧩 ETAPA 4 — Aplicação no LinkedIn
 
-Aplicar na ordem:
+Aplique nessa ordem:
+
 1. Headline
-2. About
+2. Sobre
 3. Skills
 4. Experiências
 5. Em destaque
 
 ---
 
-## Boas Práticas
+## 📊 ETAPA 5 — Acompanhar resultados
 
-- Não misture trilhas profissionais
-- Sempre use métricas
-- Refazer análise em grandes mudanças de carreira
+Toda semana, verifique:
+
+* Visualizações
+* Conexões
+* Mensagens
+* SSI
+
+---
+
+## ⚠️ Erros comuns
+
+* Pular o PROFESSIONAL_CONTEXT
+* Não usar dados reais
+* Alterar o HANDOFF
+* Misturar áreas diferentes
+
+---
+
+## 🎯 Dica final
+
+Não tente “fazer bonito”.
+
+👉 Foque em ser claro e encontrável
+
+---
+
+## ✅ Resultado esperado
+
+Após aplicar:
+
+* Mais visualizações
+* Mais contatos de recrutadores
+* Melhor posicionamento
+
+---
+
+Se não acontecer:
+
+👉 revise o PROFESSIONAL_CONTEXT

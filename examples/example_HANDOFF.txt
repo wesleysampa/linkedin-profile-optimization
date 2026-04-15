@@ -1,84 +1,50 @@
 === HANDOFF_V1 ===
-# CONTEXTO
-Este diagnóstico estratégico é definitivo.
-Use-o como fonte única de verdade para gerar os conteúdos finais.
 
-# META-DADOS (REFERÊNCIAS)
-Title: Especialista em Otimização de LinkedIn para Profissionais de TI
-Function: Diagnóstico técnico-estratégico de perfil LinkedIn
-Mission: Otimizar posicionamento, clareza, encontrabilidade e narrativa
+# CONTEXTO
+
+Este diagnóstico estratégico é definitivo.
+Use como fonte única para otimização do perfil.
 
 # PROFESSIONAL_CONTEXT
+
 MainDomain: Infraestrutura
 SubDomain: Cloud (Azure) / Windows Server / Virtualização
-SeniorityScope: Sênior \ Especialista
+SeniorityScope: Sênior | Especialista
 Markets: Brasil (SP), Remoto
 Balance: Cloud + On-Prem (equilíbrio)
-Environments: Enterprise; Ambientes regulados (Financeiro)
+Environments: Enterprise; Financeiro
 
 # INPUT_DATA_RESUMO
+
 Nome: João Silva
-CargoAtual: Analista de Infraestrutura de TI Sênior
-ObjetivoProfissional: Consolidação como especialista em Cloud Infra
+CargoAtual: Analista de Infraestrutura Sênior
+ObjetivoProfissional: Especialista em Cloud Infrastructure
 SenioridadeAtual: Sênior
 SenioridadeAlvo: Especialista
 LocalAlvo: Brasil, Remoto
 
 # HIGHLIGHTS
-- Forte experiência em ambientes híbridos
-- Atuação em missão crítica
-- Boa base técnica em Azure e Windows
+
+* Experiência em ambientes híbridos
+* Atuação em sistemas críticos
+* Forte base em Azure
 
 # RISKS
-- Headline excessivamente técnica
-- Pouca evidência de impacto mensurável
 
-# SEO_GAPS
-HeadlineGaps: Pouca estrutura de função e impacto
-AboutGaps: Texto genérico, sem métricas claras
+* Falta de métricas
+* Posicionamento pouco claro
 
 # KEYWORDS_CLUSTERS
-Current: Windows Server; Hyper-V; VMware
-Target: Azure; Cloud Infrastructure; Hybrid Cloud; Observability
 
-# BOOLEAN_READINESS
-Issues: Falta de sinônimos e termos Cloud
-
-# SENIORITY_ALIGNMENT
-Status: Parcial
-Notes: Perfil sênior mal comunicado
-
-# QUICK_WINS
-- Reestruturar Headline
-- Reescrever About com métricas
-
-# SECTION_EDITS
-Headline:
- Issues: Lista técnica
- Improvements: Estrutura Função \ Especialidade \ Impacto
-About:
- Issues: Sem storytelling
- Improvements: Narrativa P-A-R
+Current: Windows Server; VMware
+Target: Azure; Cloud; Hybrid Cloud; Observability
 
 # BOOLEAN_STRINGS (PT)
-- ("infraestrutura" OR "cloud infrastructure") AND ("azure" OR "windows server")
 
-# SSI_BASELINE
-Date: 01/03/2026
-RankSector: 28%
-RankNetwork: 31%
-ScoreTotal: 46
-ScoreBrand: 17
-ScorePeople: 8
-ScoreInsights: 6
-ScoreRelationships: 15
+* ("infraestrutura" OR "cloud") AND ("azure" OR "aws" OR "windows server")
 
-# PEDIDO AO PROMPT 2 (TAREFAS)
-Gerar:
-1) 3 Headlines
-2) About otimizado
-3) Skills Top 10
-4) Boolean
-5) Ajustes por seção
-6) Plano 30–90 dias
+# BOOLEAN_STRINGS (EN)
+
+* ("cloud engineer" OR "cloud infrastructure") AND ("azure" OR "aws")
+
 === FIM_HANDOFF ===

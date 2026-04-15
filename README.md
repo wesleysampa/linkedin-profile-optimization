@@ -1,48 +1,28 @@
-# LinkedIn Profile Optimization Framework (TI)
+# 🚀 LinkedIn Profile Optimization Framework (TI)
+
+Framework prático para **analisar e otimizar seu perfil no LinkedIn** com foco em recrutadores, ATS e posicionamento de carreira em tecnologia.
 
 ![Stars](https://img.shields.io/github/stars/wesleysampa/linkedin-profile-optimization?style=flat-square)
 ![License](https://img.shields.io/github/license/wesleysampa/linkedin-profile-optimization?style=flat-square)
 ![Last Commit](https://img.shields.io/github/last-commit/wesleysampa/linkedin-profile-optimization?style=flat-square)
 
-Framework estruturado para **análise e otimização estratégica de perfis LinkedIn**
-voltado a profissionais de Tecnologia da Informação.
-
 ---
 
-## 🎯 Objetivo
+## 📚 Conteúdos complementares
 
-Este projeto tem como objetivo:
+Se você chegou aqui pelo LinkedIn:
 
-- Aumentar encontrabilidade por recrutadores técnicos
-- Melhorar compatibilidade com ATS e Boolean Search
-- Corrigir posicionamento de senioridade
-- Estruturar narrativa profissional com impacto e métricas
-- Oferecer um processo **replicável e auditável**
+* 📝 Artigo completo (guia passo a passo): (ADICIONAR LINK)
+* 💻 Repositório com prompts e estrutura: (ESTE REPO)
+* 📌 Série de posts explicando o processo: (SEU LINKEDIN)
 
----
-
-## 🧠 Conceito-Chave
-
-> **Análise e execução são etapas separadas.**
-
-O framework exige:
-1. Diagnóstico técnico-estratégico fechado
-2. Geração de um HANDOFF imutável
-3. Otimização exclusivamente baseada nesse diagnóstico
-
-Isso evita incoerência e perda de senioridade.
-
----
-
-# 🚀 LinkedIn Profile Optimization Framework (TI)
-
-Framework prático para **analisar e otimizar seu perfil no LinkedIn** com foco em recrutadores, ATS e posicionamento de carreira em tecnologia.
+👉 Comece pelo artigo se for sua primeira vez
 
 ---
 
 ## 👋 Comece por aqui
 
-Se você quer melhorar seu LinkedIn, siga exatamente essa ordem:
+Siga exatamente essa ordem:
 
 ```text
 1. Medir seu nível atual (SSI)
@@ -54,7 +34,7 @@ Se você quer melhorar seu LinkedIn, siga exatamente essa ordem:
 7. Acompanhar evolução
 ```
 
-Tempo médio: **60 a 90 minutos**
+⏱️ Tempo médio: **60 a 90 minutos**
 
 ---
 
@@ -67,128 +47,84 @@ Tempo médio: **60 a 90 minutos**
 
 ---
 
+## 🧭 Execução guiada
+
+Se quiser seguir um passo a passo direto:
+
+📄 [Guia completo (How-to)](./docs/how-to-uso-geral.md)
+
+---
+
 ## 📊 Passo 1 — Medir (SSI)
 
-Acesse:
 https://www.linkedin.com/sales/ssi
 
-Anote:
-
-* Score total
-* Ranking no setor
-* Ranking na rede
-* Os 4 pilares
-
-👉 Isso é sua linha de base
+👉 Anote seus dados antes de começar
 
 ---
 
 ## ⚙️ Passo 2 — Ajustes obrigatórios
 
-Guia completo aqui:
-
 📄 [Configurações do perfil](./docs/configuracoes-perfil-publico.md)
 
 ---
 
-## 📥 Passo 3 — Coletar dados do perfil
+## 📥 Passo 3 — Coletar dados
 
-Você vai precisar do seu perfil como entrada.
-
-Opções:
-
-* Copiar para bloco de notas (**recomendado**)
-* Exportar PDF (menos ideal)
+Copie seu LinkedIn para um bloco de notas.
 
 ---
 
 ## 🧠 Passo 4 — PROFESSIONAL_CONTEXT
 
-Esse é o ponto mais importante do processo.
+📄 **[Abrir guia](https://github.com/wesleysampa/linkedin-profile-optimization/blob/main/docs/professional-context.md)**
 
-Ele define:
-
-* como você será interpretado
-* para quais vagas você aparece
-* como a IA vai te posicionar
-
-👉 Se errar aqui, todo o resto perde qualidade
+> ⚠️ Etapa mais importante do processo
 
 ---
 
 ## 🤖 Passo 5 — Executar os Prompts
 
-### 🔍 Prompt 1 — Análise
+> ⚠️ Execute na ordem — o segundo depende do primeiro
 
-Gera:
+### 🔍 Análise
 
-* diagnóstico completo
-* gaps de SEO
-* posicionamento
-* plano estratégico
+📄 [Prompt 1](./prompts/prompt_analysis_Profile.xml)
 
-📄 [Abrir Prompt de Análise](./prompts/prompt_analysis_Profile.xml)
+### 🚀 Otimização
 
----
-
-### 🚀 Prompt 2 — Otimização
-
-Gera:
-
-* headline otimizada
-* about reescrito
-* skills organizadas
-* melhorias por seção
-
-📄 [Abrir Prompt de Otimização](./prompts/prompt_optimization_Profile.xml)
+📄 [Prompt 2](./prompts/prompt_optimization_Profile.xml)
 
 ---
 
-## 📈 Passo 6 — Aplicar no LinkedIn
-
-Aplique:
+## 📈 Passo 6 — Aplicar
 
 * Headline
 * Sobre
-* Experiências
+* Experiência
 * Skills
-
-👉 Faça isso com calma (é onde o valor acontece)
 
 ---
 
-## 📊 Passo 7 — Acompanhar resultados
+## 📊 Passo 7 — Acompanhar
 
-Monitore semanalmente:
-
-* Visualizações do perfil
-* Novas conexões
-* Mensagens de recrutadores
-* Evolução do SSI
+* Visualizações
+* Conexões
+* Recrutadores
+* SSI
 
 ---
 
 ## ⚠️ Erros comuns
 
-* Não definir o PROFESSIONAL_CONTEXT
-* Usar palavras-chave genéricas
+* Pular o PROFESSIONAL_CONTEXT
 * Não medir antes/depois
-* Copiar conteúdo sem adaptar
-* Não acompanhar resultados
+* Usar conteúdo genérico
+* Misturar áreas
 
 ---
 
-## 💡 Dica importante
-
-LinkedIn não é currículo.
-
-👉 É um mecanismo de busca.
-
-Se você não está otimizado, você não aparece.
-
----
-
-## 🧩 Estrutura do projeto
+## 🧩 Estrutura do processo
 
 ```text
 PROFESSIONAL_CONTEXT
@@ -206,10 +142,10 @@ Aplicação no LinkedIn
 
 ## 🤝 Contribuição
 
-Se quiser sugerir melhorias ou ajustes no processo, fique à vontade para abrir uma issue ou PR.
+Abra uma issue ou PR.
 
 ---
 
-## 📌 Objetivo do projeto
+## 📌 Objetivo
 
-Ajudar profissionais de tecnologia a melhorarem seus perfis no LinkedIn de forma **prática, gratuita e estruturada**.
+Ajudar profissionais de tecnologia a melhorarem seus perfis de forma **prática e gratuita**.
