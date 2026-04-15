@@ -1,10 +1,10 @@
-# LinkedIn Profile Optimization Framework (TI)
+# 🚀 LinkedIn Profile Optimization Framework (TI)
 
 ![Stars](https://img.shields.io/github/stars/wesleysampa/linkedin-profile-optimization?style=flat-square)
 ![License](https://img.shields.io/github/license/wesleysampa/linkedin-profile-optimization?style=flat-square)
 ![Last Commit](https://img.shields.io/github/last-commit/wesleysampa/linkedin-profile-optimization?style=flat-square)
 
-Framework estruturado para **análise e otimização estratégica de perfis LinkedIn**
+Framework estruturado para **análise e otimização estratégica de perfis LinkedIn**,
 voltado a profissionais de Tecnologia da Informação.
 
 ---
@@ -13,11 +13,11 @@ voltado a profissionais de Tecnologia da Informação.
 
 Este projeto tem como objetivo:
 
-- Aumentar encontrabilidade por recrutadores técnicos
-- Melhorar compatibilidade com ATS e Boolean Search
-- Corrigir posicionamento de senioridade
-- Estruturar narrativa profissional com impacto e métricas
-- Oferecer um processo **replicável e auditável**
+* Aumentar encontrabilidade por recrutadores técnicos
+* Melhorar compatibilidade com ATS e Boolean Search
+* Corrigir posicionamento de senioridade
+* Estruturar narrativa profissional com impacto e métricas
+* Oferecer um processo **replicável e auditável**
 
 ---
 
@@ -26,17 +26,12 @@ Este projeto tem como objetivo:
 > **Análise e execução são etapas separadas.**
 
 O framework exige:
+
 1. Diagnóstico técnico-estratégico fechado
 2. Geração de um HANDOFF imutável
-3. Otimização exclusivamente baseada nesse diagnóstico
+3. Otimização baseada exclusivamente nesse diagnóstico
 
 Isso evita incoerência e perda de senioridade.
-
----
-
-# 🚀 LinkedIn Profile Optimization Framework (TI)
-
-Framework prático para **analisar e otimizar seu perfil no LinkedIn** com foco em recrutadores, ATS e posicionamento de carreira em tecnologia.
 
 ---
 
@@ -54,7 +49,15 @@ Se você quer melhorar seu LinkedIn, siga exatamente essa ordem:
 7. Acompanhar evolução
 ```
 
-Tempo médio: **60 a 90 minutos**
+⏱️ Tempo médio: **60 a 90 minutos**
+
+---
+
+## 🧭 Execução guiada (opcional)
+
+Se preferir um passo a passo mais direto:
+
+📄 [Guia completo de uso](./docs/how-to-uso-geral.md)
 
 ---
 
@@ -84,8 +87,6 @@ Anote:
 ---
 
 ## ⚙️ Passo 2 — Ajustes obrigatórios
-
-Guia completo aqui:
 
 📄 [Configurações do perfil](./docs/configuracoes-perfil-publico.md)
 
@@ -122,14 +123,16 @@ Ele define:
 
 ## 🤖 Passo 5 — Executar os Prompts
 
+> ⚠️ Execute na ordem — o Prompt 2 depende do Prompt 1
+
 ### 🔍 Prompt 1 — Análise
 
 Gera:
 
-* diagnóstico completo
-* gaps de SEO
-* posicionamento
-* plano estratégico
+* Diagnóstico completo
+* Gaps de SEO
+* Posicionamento
+* Plano estratégico
 
 📄 [Abrir Prompt de Análise](./prompts/prompt_analysis_Profile.xml)
 
@@ -139,10 +142,10 @@ Gera:
 
 Gera:
 
-* headline otimizada
-* about reescrito
-* skills organizadas
-* melhorias por seção
+* Headline otimizada
+* About reescrito
+* Skills organizadas
+* Melhorias por seção
 
 📄 [Abrir Prompt de Otimização](./prompts/prompt_optimization_Profile.xml)
 
@@ -157,7 +160,7 @@ Aplique:
 * Experiências
 * Skills
 
-👉 Faça isso com calma (é onde o valor acontece)
+👉 Faça isso com calma — é onde o valor acontece
 
 ---
 
