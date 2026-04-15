@@ -1,0 +1,62 @@
+MIT License
+
+Copyright (c) 2026 Wesley Porto Rodrigues
+
+Permission is hereby granted, free of charge...
+
+---
+
+# 🌍 PARTE 4 — Criar GitHub Pages (site automático)
+
+### Passo a passo (GUIADO):
+
+1. Vá no **repositório**
+2. Clique em **Settings**
+3. Menu lateral → **Pages**
+4. Em **Source**:
+   - Branch: `main`
+   - Folder: `/ (root)`
+5. Clique **Save**
+
+📌 Em ~1 minuto você terá:
+
+https://github.com/wesleysampa/linkedin-profile-optimization
+
+---
+
+# 🧩 PARTE 5 — Diagrama Visual (MERMAID)
+
+Crie arquivo:
+
+📄 `docs/diagram-flow.md`
+
+```md
+```mermaid
+flowchart TD
+    A[Professional Context] --> B[Prompt 1 - Análise]
+    B --> C[Analysis Handoff]
+    C --> D[Prompt 2 - Otimização]
+    D --> E[Headline / About / Skills / Boolean]
+    E --> F[Aplicação no LinkedIn]
+
+✅ GitHub renderiza automaticamente.
+
+---
+
+# 🌎 PARTE 6 — Versão em INGLÊS (README_EN.md)
+
+Crie:
+
+📄 `README_EN.md`
+
+```md
+# LinkedIn Profile Optimization Framework (IT)
+
+Framework designed to analyze and optimize LinkedIn profiles
+for IT professionals, focusing on recruiters, ATS and Boolean Search.
+
+## Key Principle
+Analysis and execution must be separated.
+
+## Workflow
+Professional Context → Analysis → Handoff → Optimization → LinkedIn
