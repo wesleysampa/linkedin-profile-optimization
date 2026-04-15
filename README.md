@@ -1,8 +1,8 @@
 # LinkedIn Profile Optimization Framework (TI)
 
-![Stars](https://img.shields.io/github/stars/SEU_USUARIO/linkedin-profile-optimization-ti?style=flat-square)
-![License](https://img.shields.io/github/license/SEU_USUARIO/linkedin-profile-optimization-ti?style=flat-square)
-![Last Commit](https://img.shields.io/github/last-commit/SEU_USUARIO/linkedin-profile-optimization-ti?style=flat-square)
+![Stars](https://img.shields.io/github/stars/wesleysampa/linkedin-profile-optimization?style=flat-square)
+![License](https://img.shields.io/github/license/wesleysampa/linkedin-profile-optimization?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/wesleysampa/linkedin-profile-optimization?style=flat-square)
 
 Framework estruturado para **análise e otimização estratégica de perfis LinkedIn**
 voltado a profissionais de Tecnologia da Informação.
