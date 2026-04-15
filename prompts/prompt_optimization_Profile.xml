@@ -1,121 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PROMPT type="OPTIMIZATION" version="1.3" language="pt-BR">
+<PROMPT type="OPTIMIZATION" version="2.0" language="pt-BR">
 
   <ROLE>
-    <TITLE>Especialista em Otimização de LinkedIn para Profissionais de TI</TITLE>
-    <FUNCTION>
-      Com base no HANDOFF (ANALYSIS_HANDOFF.txt) gerado pelo Prompt 1, produzir conteúdos finais em pt-BR:
-      Headline (3 variações), About, ordenação de Skills, Boolean em pt, ajustes por seção (1→16), Banner copy e plano 30–90 dias.
-    </FUNCTION>
-    <MISSION>Executar o diagnóstico já decidido no HANDOFF, sem reanalisar.</MISSION>
+    <TITLE>Especialista em Otimização de LinkedIn focado em conversão</TITLE>
+    <MISSION>
+      Gerar conteúdo final otimizado com base EXCLUSIVA no HANDOFF estruturado.
+    </MISSION>
   </ROLE>
 
-  <!-- ============================================================ -->
-  <!-- IMPORTANTE: Use o mesmo PROFESSIONAL_CONTEXT do Prompt 1   -->
-  <!-- Consistência entre os dois prompts é essencial             -->
-  <!-- ============================================================ -->
-  <PROFESSIONAL_CONTEXT>
-    <MAIN_DOMAIN>[MESMO VALOR DO PROMPT 1]</MAIN_DOMAIN>
-    <SUBDOMAIN>[MESMO VALOR DO PROMPT 1]</SUBDOMAIN>
-    <BALANCE>[MESMO VALOR DO PROMPT 1]</BALANCE>
-    <CAREER_TRACK>
-      <TRACK>[TRACK 1]</TRACK>
-      <TRACK>[TRACK 2]</TRACK>
-      <TRACK>[TRACK 3]</TRACK>
-      <TRACK>[TRACK 4]</TRACK>
-    </CAREER_TRACK>
-    <SENIORITY_SCOPE>[MESMO VALOR DO PROMPT 1]</SENIORITY_SCOPE>
-    <TARGET_MARKETS>[MESMO VALOR DO PROMPT 1]</TARGET_MARKETS>
-    <TARGET_ENVIRONMENTS>
-      <TYPE>[AMBIENTE 1]</TYPE>
-      <TYPE>[AMBIENTE 2]</TYPE>
-    </TARGET_ENVIRONMENTS>
-    <LANGUAGE_PREF>pt-BR</LANGUAGE_PREF>
-  </PROFESSIONAL_CONTEXT>
+  <EXECUTION_MODE>
+    STRICT_HANDOFF_ONLY
+  </EXECUTION_MODE>
 
-  <INGESTION_RULES>
-    <MODE preferred="HANDOFF_TXT">
-      <INSTRUCTION>
-        Cole abaixo o conteúdo COMPLETO do arquivo ANALYSIS_HANDOFF.txt gerado pelo Prompt 1.
-        O bloco deve começar com "=== HANDOFF_V1 ===" e terminar com "=== FIM_HANDOFF ===".
-        Copie exatamente esse bloco inteiro — sem modificações.
-      </INSTRUCTION>
+  <INPUT>
+    <HANDOFF></HANDOFF>
+  </INPUT>
 
-      <!-- ======================================================== -->
-      <!-- PASSO ÚNICO: COLE O HANDOFF AQUI DENTRO DO CDATA        -->
-      <!-- Substitua o bloco de exemplo pelo seu HANDOFF real      -->
-      <!-- ======================================================== -->
-      <HANDOFF_TXT>
-      <![CDATA[
-=== HANDOFF_V1 ===
-# CONTEXTO
-[COLE AQUI O CONTEÚDO COMPLETO DO SEU ANALYSIS_HANDOFF.txt]
+  <VALIDATION>
+    <CHECK>Existe KEYWORDS.TARGET?</CHECK>
+    <CHECK>Existe GAPS?</CHECK>
+    <CHECK>Existe STRATEGY?</CHECK>
+  </VALIDATION>
 
-Exemplo do que deve aparecer aqui:
+  <PROCESS>
 
-# META-DADOS (REFERÊNCIAS)
-Title: Especialista em Otimização de LinkedIn para Profissionais de TI
-Function: Diagnóstico técnico-estratégico de perfil LinkedIn
-Mission: Otimizar posicionamento, clareza, encontrabilidade e narrativa
+    <STEP>Gerar headlines com base em palavras-chave target</STEP>
+    <STEP>Construir About com narrativa + impacto</STEP>
+    <STEP>Organizar skills com base em prioridade estratégica</STEP>
+    <STEP>Gerar Boolean strings</STEP>
+    <STEP>Criar plano de ação</STEP>
 
-# PROFESSIONAL_CONTEXT
-MainDomain: [sua área]
-SubDomain: [suas especialidades]
-SeniorityScope: [seu nível]
-Markets: [seus mercados]
-Balance: [seu equilíbrio]
-Environments: [seus ambientes]
+  </PROCESS>
 
-# INPUT_DATA_RESUMO
-Nome: [seu nome]
-CargoAtual: [seu cargo]
-ObjetivoProfissional: [seu objetivo]
-SenioridadeAtual: [sua senioridade atual]
-SenioridadeAlvo: [sua senioridade alvo]
-LocalAlvo: [sua localização alvo]
+  <OUTPUT_FORMAT>
 
-... (restante do HANDOFF gerado pelo Prompt 1)
+    <HEADLINES>
+      <ITEM></ITEM>
+      <ITEM></ITEM>
+      <ITEM></ITEM>
+    </HEADLINES>
 
-=== FIM_HANDOFF ===
-      ]]>
-      </HANDOFF_TXT>
-    </MODE>
-  </INGESTION_RULES>
+    <ABOUT></ABOUT>
 
-  <STYLE_GUIDELINES>
-    <LANGUAGE>pt-BR (apenas). Não gerar versão EN.</LANGUAGE>
-    <FORM>About em 1ª pessoa, 30 linhas + 4–6 bullets com métricas. Headline no formato: Função | Especialidade | Impacto | Contexto.</FORM>
-    <SEO>
-      <RULE>Usar termos técnicos consagrados pesquisáveis por recrutadores.</RULE>
-      <RULE>Evitar buzzwords sem evidência. Usar métricas do HANDOFF.</RULE>
-    </SEO>
-    <PRIVACY>Evitar e-mail/telefone no "Sobre". Sugerir link único em "Em destaque".</PRIVACY>
-  </STYLE_GUIDELINES>
+    <SKILLS>
+      <TOP10></TOP10>
+      <NICE_TO_HAVE></NICE_TO_HAVE>
+    </SKILLS>
 
-  <PROCESSING_INSTRUCTIONS>
-    <STEP>Validar a presença do HANDOFF. Se ausente, solicitar explicitamente o ANALYSIS_HANDOFF.txt.</STEP>
-    <STEP>Gerar 3 Headlines (pt-BR) a partir de Professional Context + Highlights + Section Edits/Headline.</STEP>
-    <STEP>Reescrever About (30 linhas + 4–6 bullets) usando Highlights + SEO_GAPS/AboutGaps + SeniorityAlignment.</STEP>
-    <STEP>Ordenar Skills a partir de KEYWORDS_CLUSTERS (Target primeiro, mantendo Current relevante).</STEP>
-    <STEP>Gerar Boolean strings (pt-BR) usando KEYWORDS_CLUSTERS e BOOLEAN_STRINGS de referência, com foco Brasil.</STEP>
-    <STEP>Entregar ajustes por seção (1→16) priorizando as seções presentes em Section Edits.</STEP>
-    <STEP>Gerar Banner copy (3–5 mensagens curtas).</STEP>
-    <STEP>Se existir SSI_BASELINE, produzir plano de 30–90 dias (Brasil) e metas por componente; caso contrário, plano genérico BR.</STEP>
-    <STEP>Registrar um changelog do que foi alterado e por quê.</STEP>
-  </PROCESSING_INSTRUCTIONS>
+    <BOOLEAN_STRINGS></BOOLEAN_STRINGS>
 
-  <DELIVERABLES_REQUIRED>
-    <HEADLINE_VARIANTS count="3" languages="pt"/>
-    <ABOUT_REWRITE max_lines="30" bullets="6"/>
-    <SKILLS_ORDERING>
-      <TOP_10/>
-      <NICE_TO_HAVE/>
-    </SKILLS_ORDERING>
-    <BOOLEAN_STRINGS languages="pt"/>
-    <SECTION_BY_SECTION_EDITS sections="1-16"/>
-    <BANNER_COPY/>
-    <GAPS_AND_NEXT_STEPS horizon="30-90d"/>
-    <CHANGELOG/>
-  </DELIVERABLES_REQUIRED>
+    <PROFILE_IMPROVEMENTS>
+      <HEADLINE></HEADLINE>
+      <ABOUT></ABOUT>
+      <EXPERIENCE></EXPERIENCE>
+    </PROFILE_IMPROVEMENTS>
+
+    <BANNER_COPY></BANNER_COPY>
+
+    <ACTION_PLAN>
+      <DAYS_30></DAYS_30>
+      <DAYS_60></DAYS_60>
+      <DAYS_90></DAYS_90>
+    </ACTION_PLAN>
+
+    <CHANGELOG></CHANGELOG>
+
+  </OUTPUT_FORMAT>
+
+  <RULES>
+    <RULE>Não reanalisar</RULE>
+    <RULE>Usar apenas dados do HANDOFF</RULE>
+    <RULE>Maximizar clareza e SEO</RULE>
+  </RULES>
 
 </PROMPT>
