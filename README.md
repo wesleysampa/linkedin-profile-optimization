@@ -53,6 +53,39 @@ Se você quer melhorar seu LinkedIn, siga exatamente essa ordem:
 
 ---
 
+## 📅 Série: Otimizando seu LinkedIn em 7 dias
+
+Este projeto também está estruturado como uma série prática no LinkedIn.
+
+Cada dia representa uma etapa do processo:
+
+* **Dia 1** — Entendendo seu nível atual (SSI)
+  👉 (INSERIR LINK DO POST AQUI)
+
+* **Dia 2** — Ajustes obrigatórios de visibilidade
+  👉 (INSERIR LINK DO POST AQUI)
+
+* **Dia 3** — Coleta e estruturação do perfil
+  👉 (INSERIR LINK DO POST AQUI)
+
+* **Dia 4** — Definição do posicionamento (PROFESSIONAL_CONTEXT)
+  👉 (INSERIR LINK DO POST AQUI)
+
+* **Dia 5** — Análise estratégica (Prompt 1)
+  👉 (INSERIR LINK DO POST AQUI)
+
+* **Dia 6** — Otimização do perfil (Prompt 2)
+  👉 (INSERIR LINK DO POST AQUI)
+
+* **Dia 7** — Aplicação e acompanhamento
+  👉 (INSERIR LINK DO POST AQUI)
+
+📌 Acompanhar a série completa: (LINK DO SEU PERFIL OU POST PRINCIPAL)
+
+👉 Recomendo seguir na ordem — cada etapa depende da anterior
+
+---
+
 ## 🧭 Execução guiada (opcional)
 
 Se preferir um passo a passo mais direto:
@@ -83,12 +116,15 @@ Anote:
 * Os 4 pilares
 
 👉 Isso é sua linha de base
+👉 Veja também o **Dia 1 da série**
 
 ---
 
 ## ⚙️ Passo 2 — Ajustes obrigatórios
 
 📄 [Configurações do perfil](./docs/configuracoes-perfil-publico.md)
+
+👉 Veja também o **Dia 2 da série**
 
 ---
 
@@ -100,6 +136,8 @@ Opções:
 
 * Copiar para bloco de notas (**recomendado**)
 * Exportar PDF (menos ideal)
+
+👉 Veja também o **Dia 3 da série**
 
 ---
 
@@ -117,6 +155,8 @@ Ele define:
 
 📄 **[Abrir o guia do PROFESSIONAL_CONTEXT](https://github.com/wesleysampa/linkedin-profile-optimization/blob/main/docs/professional-context.md)**
 
+👉 Veja também o **Dia 4 da série**
+
 > ⚠️ Leia e preencha antes de seguir para os prompts
 
 ---
@@ -124,6 +164,7 @@ Ele define:
 ## 🤖 Passo 5 — Executar os Prompts
 
 > ⚠️ Execute na ordem — o Prompt 2 depende do Prompt 1
+> 👉 Veja também os **Dias 5 e 6 da série**
 
 ### 🔍 Prompt 1 — Análise
 
@@ -161,6 +202,7 @@ Aplique:
 * Skills
 
 👉 Faça isso com calma — é onde o valor acontece
+👉 Veja também o **Dia 7 da série**
 
 ---
 
@@ -172,6 +214,8 @@ Monitore semanalmente:
 * Novas conexões
 * Mensagens de recrutadores
 * Evolução do SSI
+
+👉 Veja também o **Dia 7 da série**
 
 ---
 
