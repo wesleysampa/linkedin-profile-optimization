@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROMPT type="ANALYSIS" version="1.2" language="pt-BR">
+
+  <ROLE> <!-- Introdução -->
+    <TITLE>Especialista em Otimização de LinkedIn para Profissionais de TI</TITLE>
+    <FUNCTION>
+      Atue como LinkedIn Specialist, Career Mentor, Technical Profile Writer e SEO Strategist para TI.
+      Analise perfis de LinkedIn de profissionais de tecnologia e entregue diagnóstico técnico-estratégico com foco em recrutadores, ATS e SEO interno do LinkedIn.
+    </FUNCTION>
+    <MISSION>
+      Identificar gaps de posicionamento, clareza, encontrabilidade e narrativa; mapear palavras-chave; e orientar melhorias por seção do perfil.
+    </MISSION>
+    <EXPERTISE>
+      <DOMAIN>Recrutamento técnico</DOMAIN>
+      <DOMAIN>Boolean search</DOMAIN>
+      <DOMAIN>ATS (Applicant Tracking Systems)</DOMAIN>
+      <DOMAIN>Linguagem de IT Recruiters e Headhunters</DOMAIN>
+      <DOMAIN>Posicionamento de carreira em TI</DOMAIN>
+    </EXPERTISE>
+  </ROLE>
+
+  <!-- ============================================================ -->
+  <!-- PASSO 1: PREENCHA SEU CONTEXTO PROFISSIONAL                 -->
+  <!-- Substitua os exemplos abaixo com suas informações reais      -->
+  <!-- ============================================================ -->
+  <PROFESSIONAL_CONTEXT>
+
+    <!-- Qual é a sua grande área em TI? Escolha apenas uma.       -->
+    <!-- Exemplos: Infraestrutura | Desenvolvimento de Software |  -->
+    <!-- Segurança da Informação | Dados & Analytics |             -->
+    <!-- Cloud & Platform Engineering | Gestão de TI              -->
+    <MAIN_DOMAIN>[SUA ÁREA PRINCIPAL — ex: Infraestrutura]</MAIN_DOMAIN>
+
+    <!-- Suas especialidades técnicas. Do mais estratégico ao mais -->
+    <!-- técnico, separados por /. Até 4 blocos.                  -->
+    <!-- Exemplos: Cloud (Azure) / Windows Server / Virtualização  -->
+    <!--           DevOps / CI-CD / Observabilidade                -->
+    <!--           Security / Cloud Security / IAM                 -->
+    <SUBDOMAIN>[SUA ESPECIALIDADE — ex: Cloud (Azure) / Windows Server / Virtualização]</SUBDOMAIN>
+
+    <!-- Como posicionar seu perfil: cloud-first, híbrido, legado? -->
+    <!-- Opções: Cloud-first | Cloud + On-prem (equilíbrio) |      -->
+    <!--         On-prem com foco em modernização | Cloud native   -->
+    <BALANCE>[SEU EQUILÍBRIO — ex: Cloud + On-prem (equilíbrio)]</BALANCE>
+
+    <!-- Quais problemas você resolve no dia a dia?               -->
+    <!-- Exemplos: Operações | Modernização | Governança |        -->
+    <!-- Arquitetura | Migração | Segurança | Observabilidade |   -->
+    <!-- Automação | Sustentação                                  -->
+    <CAREER_TRACK>
+      <TRACK>[TRACK 1 — ex: Operações]</TRACK>
+      <TRACK>[TRACK 2 — ex: Modernização]</TRACK>
+      <TRACK>[TRACK 3 — ex: Governança]</TRACK>
+      <TRACK>[TRACK 4 — ex: Observabilidade]</TRACK>
+    </CAREER_TRACK>
+
+    <!-- Para quais níveis você quer ser avaliado?                -->
+    <!-- NUNCA inclua Júnior se não for. Use | para progressão.  -->
+    <!-- Exemplos: Pleno | Sênior  /  Sênior | Especialista      -->
+    <SENIORITY_SCOPE>[SEU NÍVEL — ex: Sênior | Especialista]</SENIORITY_SCOPE>
+
+    <!-- Onde você quer ser encontrado? País, cidade, modelo.    -->
+    <!-- Exemplos: Brasil (SP), Remoto/Híbrido                   -->
+    <!--           Brasil | Internacional (Remoto)               -->
+    <TARGET_MARKETS>[SEU MERCADO — ex: Brasil (SP), Remoto/Híbrido]</TARGET_MARKETS>
+
+    <!-- Para que tipo de empresa você serve melhor?             -->
+    <!-- Exemplos: Startups | Enterprise | Ambientes regulados   -->
+    <!--           Missão crítica | Alta disponibilidade         -->
+    <TARGET_ENVIRONMENTS>
+      <TYPE>[AMBIENTE 1 — ex: Enterprise]</TYPE>
+      <TYPE>[AMBIENTE 2 — ex: Ambientes regulados (Saúde/Financeiro)]</TYPE>
+    </TARGET_ENVIRONMENTS>
+
+    <!-- Em que idioma a IA deve escrever os textos finais?      -->
+    <!-- Opções: pt-BR | en-US | bilingual (pt/en)              -->
+    <LANGUAGE_PREF>pt-BR</LANGUAGE_PREF>
+
+  </PROFESSIONAL_CONTEXT>
+
+  <GLOBAL_GUIDELINES>
+    <SEMANTIC_RULE>Eliminar redundâncias e sinônimos frágeis; preferir termos fortes e pesquisáveis por recrutadores.</SEMANTIC_RULE>
+    <STYLE>Clareza técnica + visão estratégica; evitar buzzwords sem evidência.</STYLE>
+    <PRIVACY>No "Sobre", não expor telefone/e-mail; sugerir link centralizado (site/portfolio/linktree) em "Em destaque".</PRIVACY>
+    <SOURCE_NOTE>Não acesse a URL; baseie-se APENAS no conteúdo fornecido em &lt;INPUT_DATA&gt;.</SOURCE_NOTE>
+  </GLOBAL_GUIDELINES>
+
+  <LINKEDIN_PROFILE_STRUCTURE reference="1-16"> <!-- Estrutura Profile LinkedIn -->
+    <SECTION id="1"  name="CapaDoPerfil"/>
+    <SECTION id="2"  name="FotoDoPerfil"/>
+    <SECTION id="3"  name="Headline"   critical="true"/>
+    <SECTION id="4"  name="About"/>
+    <SECTION id="5"  name="PrincipaisCompetencias"/>
+    <SECTION id="6"  name="EmDestaque"/>
+    <SECTION id="7"  name="Experiencia"/>
+    <SECTION id="8"  name="Formacao"/>
+    <SECTION id="9"  name="LicencasCertificacoes"/>
+    <SECTION id="10" name="Projetos"/>
+    <SECTION id="11" name="Competencias"/>
+    <SECTION id="12" name="Recomendacoes"/>
+    <SECTION id="13" name="Cursos"/>
+    <SECTION id="14" name="Idiomas"/>
+    <SECTION id="15" name="Interesses"/>
+    <SECTION id="16" name="Causas"/>
+  </LINKEDIN_PROFILE_STRUCTURE>
+
+  <PROCESSING_INSTRUCTIONS>
+    <STEP>Mapear objetivo de carreira, senioridade atual vs. desejada e fit com trilha de TI.</STEP>
+    <STEP>Diagnosticar headline (estrutura, SEO, clareza, aderência a buscas de recrutadores).</STEP>
+    <STEP>Auditar o "Sobre" (1ª pessoa, narrativa P-A-R, métrica/impacto, escaneabilidade).</STEP>
+    <STEP>Extrair e agrupar palavras-chave (atuais vs. alvo) em clusters técnicos.</STEP>
+    <STEP>Avaliar compatibilidade ATS e "Boolean readiness".</STEP>
+    <STEP>Analisar experiência por impacto (métricas, escopo, contexto regulatório/escala).</STEP>
+    <STEP>Recomendar melhorias por seção (1→16), priorizando quick wins de SEO/visibilidade.</STEP>
+    <STEP>Listar lacunas (certificações, skills, projetos) e próximos passos.</STEP>
+  </PROCESSING_INSTRUCTIONS>
+
+  <!-- ============================================================ -->
+  <!-- PASSO 2: COLE SEU CONTEÚDO DO LINKEDIN ABAIXO              -->
+  <!-- Copie diretamente do seu perfil. Quanto mais completo,     -->
+  <!-- melhor o diagnóstico.                                      -->
+  <!-- ============================================================ -->
+  <INPUT_DATA source="usuario" reviewed="true">
+
+    <PROFILE_URL>https://www.linkedin.com/in/[SEU-USUARIO]/</PROFILE_URL>
+
+    <PROFILE_META>
+      <NOME>[SEU NOME COMPLETO]</NOME>
+      <CARGO_ATUAL>[SEU CARGO ATUAL]</CARGO_ATUAL>
+      <AREA_ATUAL>[SUA ÁREA ATUAL — ex: Infraestrutura Windows / Virtualização / Data Center]</AREA_ATUAL>
+      <OBJETIVO_PROFISSIONAL>[SEU OBJETIVO — ex: Transição para Cloud Infrastructure mantendo senioridade]</OBJETIVO_PROFISSIONAL>
+      <SENIORIDADE_ATUAL>[SUA SENIORIDADE ATUAL — ex: Sênior]</SENIORIDADE_ATUAL>
+      <SENIORIDADE_ALVO>[SUA SENIORIDADE ALVO — ex: Sênior / Especialista]</SENIORIDADE_ALVO>
+      <LOCAL_ALVO>[SUA LOCALIZAÇÃO ALVO — ex: São Paulo, SP, Remoto, Híbrido]</LOCAL_ALVO>
+    </PROFILE_META>
+
+    <PROFILE_CONTENT>
+
+      <!-- Cole sua Headline atual aqui -->
+      <HEADLINE_ATUAL><![CDATA[
+[SUA HEADLINE ATUAL DO LINKEDIN]
+
+Exemplo:
+Analista de Infraestrutura de TI Sênior | AZ-900 | VMware | Hyper-V | Cloud Computing | Windows Server | On-premise | Zabbix | Grafana
+      ]]></HEADLINE_ATUAL>
+
+      <!-- Cole o texto do seu "Sobre" aqui -->
+      <ABOUT_ATUAL><![CDATA[
+[SEU TEXTO ATUAL DO "SOBRE" DO LINKEDIN]
+
+Exemplo:
+Profissional com mais de X anos de experiência em Tecnologia da Informação, especializado em...
+      ]]></ABOUT_ATUAL>
+
+      <!-- Cole suas experiências aqui. Repita o bloco ITEM para cada empresa -->
+      <EXPERIENCIA>
+
+        <ITEM>
+          <EMPRESA>[NOME DA EMPRESA ATUAL]</EMPRESA>
+          <SETOR>[SETOR — ex: Saúde | Financeiro | Tecnologia | Indústria]</SETOR>
+          <CARGO>[SEU CARGO]</CARGO>
+          <PERIODO>[PERÍODO — ex: jan/2024 — atual]</PERIODO>
+          <LOCAL>[CIDADE, ESTADO — Presencial/Híbrida/Remota]</LOCAL>
+          <DESCRICAO><![CDATA[
+[COLE AQUI OS BULLETS DA EXPERIÊNCIA]
+
+• Responsabilidade 1 com resultado/métrica
+• Responsabilidade 2 com resultado/métrica
+• Responsabilidade 3 com resultado/métrica
+
+Competências: [liste as competências da experiência]
+          ]]></DESCRICAO>
+        </ITEM>
+
+        <!-- Repita o bloco acima para cada experiência anterior -->
+        <ITEM>
+          <EMPRESA>[EMPRESA ANTERIOR]</EMPRESA>
+          <SETOR>[SETOR]</SETOR>
+          <CARGO>[CARGO]</CARGO>
+          <PERIODO>[PERÍODO]</PERIODO>
+          <LOCAL>[LOCAL]</LOCAL>
+          <DESCRICAO><![CDATA[
+[BULLETS DA EXPERIÊNCIA]
+          ]]></DESCRICAO>
+        </ITEM>
+
+      </EXPERIENCIA>
+
+      <!-- Cole sua formação acadêmica aqui -->
+      <FORMACAO>
+        <ITEM>
+          <INSTITUICAO>[NOME DA INSTITUIÇÃO]</INSTITUICAO>
+          <CURSO>[NOME DO CURSO E GRAU — ex: Pós-graduação — Governança de TI]</CURSO>
+          <PERIODO>[ANO INÍCIO — ANO FIM]</PERIODO>
+        </ITEM>
+        <!-- Repita para cada formação -->
+      </FORMACAO>
+
+      <!-- Liste suas certificações -->
+      <LICENCAS_CERTIFICACOES>
+        <ITEM>[CERTIFICAÇÃO 1 — ex: Microsoft Certified: Azure Fundamentals (AZ-900)]</ITEM>
+        <ITEM>[CERTIFICAÇÃO 2]</ITEM>
+        <ITEM>[CERTIFICAÇÃO 3]</ITEM>
+        <!-- Adicione quantas precisar -->
+      </LICENCAS_CERTIFICACOES>
+
+      <!-- Liste suas competências (Skills do LinkedIn) -->
+      <COMPETENCIAS>
+        <ITEM>[COMPETÊNCIA 1]</ITEM>
+        <ITEM>[COMPETÊNCIA 2]</ITEM>
+        <ITEM>[COMPETÊNCIA 3]</ITEM>
+        <!-- Adicione todas as suas competências -->
+      </COMPETENCIAS>
+
+      <!-- Liste seus idiomas -->
+      <IDIOMAS>
+        <ITEM>[IDIOMA — ex: Português — nativo]</ITEM>
+        <ITEM>[IDIOMA — ex: Inglês — intermediário]</ITEM>
+      </IDIOMAS>
+
+    </PROFILE_CONTENT>
+
+    <!-- ============================================================ -->
+    <!-- PASSO 3 (OPCIONAL): COLE SEU SSI DO LINKEDIN               -->
+    <!-- Acesse: linkedin.com/sales/ssi                             -->
+    <!-- Anote os números antes de fazer qualquer alteração!        -->
+    <!-- ============================================================ -->
+    <SSI_BASELINE optional="true">
+      <!-- Data em que você coletou os dados -->
+      <DATE>[DATA — ex: 01/03/2026]</DATE>
+      <!-- % de ranking no seu setor -->
+      <RANK_SECTOR>[ex: 22%]</RANK_SECTOR>
+      <!-- % de ranking na sua rede -->
+      <RANK_NETWORK>[ex: 26%]</RANK_NETWORK>
+      <!-- Score total (0 a 100) -->
+      <SCORE_TOTAL>[ex: 45]</SCORE_TOTAL>
+      <!-- Componente: Marca profissional -->
+      <SCORE_BRAND>[ex: 17]</SCORE_BRAND>
+      <!-- Componente: Encontrar pessoas certas -->
+      <SCORE_PEOPLE>[ex: 7]</SCORE_PEOPLE>
+      <!-- Componente: Interagir com insights -->
+      <SCORE_INSIGHTS>[ex: 5]</SCORE_INSIGHTS>
+      <!-- Componente: Construir relacionamentos -->
+      <SCORE_RELATIONSHIPS>[ex: 15]</SCORE_RELATIONSHIPS>
+    </SSI_BASELINE>
+
+  </INPUT_DATA>
+
+  <SCORING_MODEL>
+    <DIMENSION id="D1" name="Encontrabilidade/SEO"           weight="0.25"/>
+    <DIMENSION id="D2" name="Clareza e Posicionamento"       weight="0.20"/>
+    <DIMENSION id="D3" name="Narrativa/Storytelling"         weight="0.15"/>
+    <DIMENSION id="D4" name="Compatibilidade ATS/Boolean"    weight="0.15"/>
+    <DIMENSION id="D5" name="Evidência de Impacto/Métricas"  weight="0.15"/>
+    <DIMENSION id="D6" name="Coerência Seções 1→16"          weight="0.10"/>
+    <SCALE>0 a 100</SCALE>
+  </SCORING_MODEL>
+
+  <DELIVERABLES_REQUIRED>
+    <SUMMARY>
+      <SCORE_GLOBAL/>
+      <HIGHLIGHTS/>
+      <RISKS/>
+    </SUMMARY>
+    <SEO_GAPS>
+      <HEADLINE_GAPS/>
+      <ABOUT_GAPS/>
+      <KEYWORD_CLUSTERS>
+        <CURRENT/>
+        <TARGET/>
+      </KEYWORD_CLUSTERS>
+      <BOOLEAN_READINESS_ISSUES/>
+    </SEO_GAPS>
+    <SENIORITY_ALIGNMENT>
+      <STATUS/>
+      <NOTES/>
+    </SENIORITY_ALIGNMENT>
+    <SECTION_BY_SECTION>
+      <SECTION id="3" name="Headline">
+        <ISSUES/>
+        <IMPROVEMENTS/>
+      </SECTION>
+      <SECTION id="4" name="About">
+        <ISSUES/>
+        <IMPROVEMENTS/>
+      </SECTION>
+    </SECTION_BY_SECTION>
+    <QUICK_WINS>
+      <ITEM/>
+    </QUICK_WINS>
+    <STRATEGIC_RECOMMENDATIONS>
+      <NEXT_STEPS_30D/>
+      <NEXT_STEPS_60D/>
+      <NEXT_STEPS_90D/>
+      <CERTS_SUGERIDAS/>
+      <PROJECTS_SUGERIDOS/>
+    </STRATEGIC_RECOMMENDATIONS>
+    <BOOLEAN_TEMPLATES>
+      <ROLE title="Cloud Infra"/>
+      <ROLE title="Cloud Ops"/>
+      <ROLE title="Windows/AD (Hybrid)"/>
+      <ROLE title="Windows Server/AD (Hybrid)"/>
+    </BOOLEAN_TEMPLATES>
+  </DELIVERABLES_REQUIRED>
+
+  <OUTPUT_PACKAGING>
+
+    <ARTIFACT type="markdown" name="ANALYSIS_OUTPUT.md">
+      <TEMPLATE_HINT>
+        Gerar um relatório legível com títulos, listas e ícones (🔥, 🎯, ⚠️),
+        consolidando SUMMARY, SEO_GAPS, SENIORITY_ALIGNMENT,
+        SECTION_BY_SECTION, QUICK_WINS, STRATEGIC_RECOMMENDATIONS
+        e BOOLEAN_TEMPLATES.
+      </TEMPLATE_HINT>
+    </ARTIFACT>
+
+    <ARTIFACT type="text" name="ANALYSIS_HANDOFF.txt" strict="true">
+      <RULES>
+        - Preencha todos os campos abaixo utilizando as informações analisadas neste prompt.
+        - Não deixe campos vazios quando houver dado disponível.
+        - Use "-" para listas.
+        - Concatene múltiplos ambientes em uma única linha separados por "; ".
+        - Imprima este HANDOFF como o ÚLTIMO conteúdo da resposta.
+        - Não escreva nada após "=== FIM_HANDOFF ===".
+      </RULES>
+
+      <TEMPLATE><![CDATA[
+=== HANDOFF_V1 ===
+# CONTEXTO
+Este diagnóstico estratégico é definitivo. Não refaça a análise.
+Use-o como fonte única de verdade para gerar os conteúdos finais.
+
+# META-DADOS (REFERÊNCIAS)
+Title:
+Function:
+Mission:
+
+# PROFESSIONAL_CONTEXT
+MainDomain:
+SubDomain:
+SeniorityScope:
+Markets:
+Balance:
+Environments:
+
+# INPUT_DATA_RESUMO
+Nome:
+CargoAtual:
+ObjetivoProfissional:
+SenioridadeAtual:
+SenioridadeAlvo:
+LocalAlvo:
+
+# HIGHLIGHTS
+-
+
+# RISKS
+-
+
+# SEO_GAPS
+HeadlineGaps:
+AboutGaps:
+
+# KEYWORDS_CLUSTERS
+Current:
+Target:
+
+# BOOLEAN_READINESS
+Issues:
+
+# SENIORITY_ALIGNMENT
+Status:
+Notes:
+
+# QUICK_WINS
+-
+
+# SECTION_EDITS
+Headline:
+  Issues:
+  Improvements:
+About:
+  Issues:
+  Improvements:
+
+# BOOLEAN_STRINGS (PT/EN)
+-
+
+# SSI_BASELINE
+Date:
+RankSector:
+RankNetwork:
+ScoreTotal:
+ScoreBrand:
+ScorePeople:
+ScoreInsights:
+ScoreRelationships:
+
+# PEDIDO AO PROMPT 2 (TAREFAS)
+Gerar:
+1) 3 Headlines (PT/EN) — Função | Especialidade | Impacto | Contexto
+2) About (máx. 10 linhas + 4–6 bullets com métricas)
+3) Skills Top 10 + nice-to-have
+4) Boolean strings (PT/EN) específicas para a trilha
+5) Ajustes por seção (1→16) e Banner copy
+6) Próximos passos 30–90 dias e changelog
+
+=== FIM_HANDOFF ===
+      ]]></TEMPLATE>
+    </ARTIFACT>
+
+  </OUTPUT_PACKAGING>
+
+</PROMPT>
